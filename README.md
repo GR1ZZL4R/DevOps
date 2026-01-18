@@ -81,7 +81,7 @@ Track changes to documentation, compatibility status, and roadmap entries.
 
 | App | DevOps 1.0 Alpha 1 | DevOps Alpha 2 |
 | --- | --- | --- |
-| 🏬 App Store | TBD | ⏳ |
+| 🏬 App Store |✅ **1.0** | ⏳ |
 | 📶 Bluetooth Monitor |✅ **1.0** | ⏳ |
 | 🎥 Cam Journal |✅ **1.0** | ⏳ |
 | ⌨️ Code Editor |✅ **Alpha** | ⏳ |
