@@ -79,19 +79,19 @@ Track changes to documentation, compatibility status, and roadmap entries.
 
 **Legend:** ✅ compatible · ❌ not compatible · 📝 changelog entry · ⏳ pending
 
-| App | DevOps 1.0 Alpha | DevOps 1.1 |
+| App | DevOps 1.0 Alpha 1 | DevOps Alpha 2 |
 | --- | --- | --- |
 | 🏬 App Store | TBD | ⏳ |
-| 📶 Bluetooth Monitor | **1.0** | ⏳ |
-| 🎥 Cam Journal | **1.0** | ⏳ |
-| ⌨️ Code Editor | **Alpha** | ⏳ |
-| 📈 DataAnalyzer | **Alpha** | ⏳ |
-| 🧪 DataLab | **Alpha** | ⏳ |
+| 📶 Bluetooth Monitor |✅ **1.0** | ⏳ |
+| 🎥 Cam Journal |✅ **1.0** | ⏳ |
+| ⌨️ Code Editor |✅ **Alpha** | ⏳ |
+| 📈 DataAnalyzer |✅ **Alpha** | ⏳ |
+| 🧪 DataLab |✅ **Alpha** | ⏳ |
 | 🌐 ETH TERMINAL | TBD | ⏳ |
 | 📡 LoCo-Unit | TBD | ⏳ |
-| 🔤 OCR Video | 1.0 | ⏳ |
-| 🔌 SERIAL TERMINAL | **1.0** | ⏳ |
-| 📋 Table | **Alpha** | ⏳ |
+| 🔤 OCR Video |✅ 1.0 | ⏳ |
+| 🔌 SERIAL TERMINAL |✅ **1.0** | ⏳ |
+| 📋 Table |✅ **Alpha** | ⏳ |
 | 📶 WiFi Monitor | TBD  | ⏳ |
 
 ---
