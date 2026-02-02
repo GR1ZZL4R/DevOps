@@ -1,5 +1,5 @@
 
-# IPC Protocol DevOps 1.0 Alpha 1 
+# IPC Protocol DevOps 1.0 
 
 This protocol defines communication over the central DevOps data node between all apps. 
 It allows third-party apps to integrate and communicate within the system like a bus.
