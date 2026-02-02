@@ -13,7 +13,7 @@
 
 DevOps apps communicate through a local, high-performance **IPC bus** (local sockets / named pipes) via a central DevOps data node. This enables first-party and third-party apps to integrate cleanly, exchange data in real time, and remain loosely coupled.
 
-➡️ **Read the full specification here:** docs/App_IPC_Protocol.md
+➡️ **Read the full specification here:** [docs/App_IPC_Protocol.md](docs/App_IPC_Protocol.md
 
 ---
 
