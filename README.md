@@ -87,7 +87,8 @@ Track changes to documentation, compatibility status, and roadmap entries.
 |✅ |Done 	|
 |🤝 |Planned 	|
 
-
+|Status |	Roadmap |
+| --- | --- |
 |✅ | Server -Infrastructur and -Communication, Ready to Scale Up. |
 |✅ | DevOps App Store. |
 |✅ | Prototype Testing. |
