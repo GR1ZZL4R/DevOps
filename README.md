@@ -60,9 +60,9 @@ Track changes to documentation, compatibility status, and roadmap entries.
 
 ## 🧭 App Versions Overview
 
-**TBD** means the app version metadata has not been published yet. 🔎
+**TBD** means the app version metadata has not been published a functional version yet but its in progress. 🔎
 
-| App | Latest Version | Notes |
+| App | 1.0 Alpha | Notes |
 | --- | --- | --- |
 | 🏬 App Store | TBD | Marketplace and app discovery |
 | 📶 Bluetooth Monitor | **1.0** | Device discovery, telemetry readout, basic monitoring |
@@ -71,6 +71,7 @@ Track changes to documentation, compatibility status, and roadmap entries.
 | 📈 DataAnalyzer | **Alpha** | Plots, filters, and analysis building blocks |
 | 🧪 DataLab | **Alpha** | Panel-based workspace (tables, editors, analyzers) |
 | 🌐 ETH TERMINAL | TBD | Ethernet/network tools (planned) |
+| 🚌 CAN TERMINAL | **Alpha** | CAN 2.0 & FD based on https://github.com/collin80/SavvyCAN |
 | 📡 LoCo-Unit | TBD | LoCo-Unit device integration (planned) |
 | 🔤 OCR Video | TBD | OCR extraction from video overlays (planned) |
 | 🔌 SERIAL TERMINAL | **1.0** | Serial communication, logging, quick debugging |
