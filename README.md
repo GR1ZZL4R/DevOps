@@ -66,9 +66,9 @@ Track changes to documentation, compatibility status, and roadmap entries.
 | --- | --- | --- |
 | 🏬 App Store | TBD | Marketplace and app discovery |
 | 📶 Bluetooth Monitor | **1.0** | Device discovery, telemetry readout, basic monitoring |
-| 🎥 Cam Journal | **1.0** | Video-based sessions, logging, and analysis workflow entry point |
+| 🎥 Cam Journal | **Beta** | Video-based sessions, logging, and analysis workflow entry point |
 | ⌨️ Code Editor | **Aplha** | Code-based panels and IO-aware editing |
-| 📈 DataAnalyzer | **1.0** | Plots, filters, and analysis building blocks |
+| 📈 DataAnalyzer | **Beta** | Plots, filters, and analysis building blocks |
 | 🧪 DataLab | **Alpha** | Panel-based workspace (tables, editors, analyzers) |
 | 🌐 ETH TERMINAL | TBD | Ethernet/network tools (planned) |
 | 🚌 CAN TERMINAL | **Alpha** | CAN 2.0 & FD based on https://github.com/collin80/SavvyCAN |
