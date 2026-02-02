@@ -88,10 +88,10 @@ Track changes to documentation, compatibility status, and roadmap entries.
 |🤝 |Planned 	|
 
 
-|✅ |Server -Infrastructur and -Communication, Ready to Scale Up.
-|✅ |DevOps App Store
-|✅ |Prototype Testing.
-|✅ |Concept Freeze for Secrurity.
+|✅ |Server -Infrastructur and -Communication, Ready to Scale Up.|
+|✅ |DevOps App Store.|
+|✅ |Prototype Testing.|
+|✅ |Concept Freeze for Secrurity.|
 |🧷 |Testing Alpha Version.|
 |🧷|-- Lizenz Secrurity.|
 |🧷|-- Creation of a compiler pipeline for deliverable software in C and C++.| 
