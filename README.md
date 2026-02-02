@@ -1,5 +1,5 @@
 ## The 1.0 Beta Version will be released in March 2026
-## The First 1.0 Alpha Versions are currently being tested by Test-Users. If you would like to become a Test-User and get free acces to all Apps, please send me an email at n.bloemen@grizzlar.de.
+## The First 1.0 Alpha Versions are for Test-Users only. If you’d like to become a Test-User and get free access to all apps, please send me a request at n.bloemen@grizzlar.de
 
 # DevOps Lounge ✨🧭
 
