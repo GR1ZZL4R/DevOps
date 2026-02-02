@@ -13,7 +13,7 @@
 
 DevOps apps communicate through a local, high-performance **IPC bus** (local sockets / named pipes) via a central DevOps data node. This enables first-party and third-party apps to integrate cleanly, exchange data in real time, and remain loosely coupled.
 
-➡️ **Read the full specification here:** [docs/App_IPC_Protocol.md](docs/App_IPC_Protocol.md
+➡️ **Read the full specification here:**  [DevOps Open App Communication](https://github.com/GR1ZZL4R/DevOps/blob/main/docs/App_IPC_Protocol.md)
 
 ---
 
@@ -81,7 +81,7 @@ Track changes to documentation, compatibility status, and roadmap entries.
 | 📈 DataAnalyzer      | **1.0 Beta**       | Plots, filters, and analysis building blocks                                                       |
 | 🧪 DataLab           | **1.0 Alpha**      | Panel-based workspace (tables, editors, analyzers)                                                 |
 | 🌐 ETH TERMINAL      | **1.0 TBD**        | Ethernet/network tools (planned)                                                                   |
-| 🚌 CAN TERMINAL      | **1.0 Alpha**      | CAN 2.0 & FD based on [https://github.com/collin80/SavvyCAN](https://github.com/collin80/SavvyCAN) |
+| 🚌 CAN TERMINAL      | **1.0 Alpha**      | CAN 2.0 & FD based on [SavvyCAN](https://github.com/collin80/SavvyCAN) |
 | 📡 LoCo-Unit         | **1.0 TBD**        | LoCo-Unit device integration (planned)                                                             |
 | 🔤 OCR Video         | **1.0 Alpha**      | OCR extraction from video overlays to CSV                                                          |
 | 🧩 pyhbox Interface  | **1.0 Release**    | Sensor app integration and live data bridging (planned)                                            |
