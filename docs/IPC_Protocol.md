@@ -24,14 +24,14 @@ To keep everything unambiguous, this protocol uses these terms strictly:
 * **Message**: the full transport frame (**Header + Container + CRC**)
 * **Header**: fixed message header
 * **Container**: the message body (selected by `container_type`)
-* **Payload**: the bytes inside a container item (typed via `payload_type`)
+* **Payload**: the bytes inside a container payload (typed via `payload_type`)
 
 There are two different type fields:
 
 1. **`container_type`** (message-level, in the header)
    Selects the **container format** that follows in the message.
 
-2. **`payload_type`** (container-level, inside a container item)
+2. **`payload_type`** (container-level, inside a container payload)
    Describes **how to interpret the payload bytes** using the shared **Payload Types List** (legend).
 
 ---
@@ -76,7 +76,7 @@ Every message consists of:
 
 ### 2.1 `container_type = 1` — Multi Use Cases Container
 
-This container type can hold multiple **container items** inside one message.
+This container type can hold multiple **container payloads** inside one message.
 
 #### 2.1.1 Extended header (`container_type = 1`)
 
@@ -84,9 +84,9 @@ This container type can hold multiple **container items** inside one message.
 | ----------------- | ----: | ----- | ------- |
 | `number_of_payloads` | 8bit | uint8 | `0–255` |
 
-#### 2.1.2 Container item definition (repeated `number_of_items` times)
+#### 2.1.2 Container payload definition (repeated `number_of_payloads` times)
 
-Each container item consists of:
+Each container payload consists of:
 
 | Field                 |     Size | Type   | Notes                                              |
 | --------------------- | -------: | ------ | -------------------------------------------------- |
@@ -96,7 +96,7 @@ Each container item consists of:
 | (`size_of_payload`)   |    8bit | uint8  | Depends on `payload_type`                          |
 | `payload`             | variable | bytes  | `number_of_payload * size_of_payload` bytes        |
 
-> **CRC:** The message-level CRC32 (Section 1.3) protects the complete container and all container items.
+> **CRC:** The message-level CRC32 (Section 1.3) protects the complete container and all container payloads.
 
 ### 2.2 `container_type = 2–244`
 
@@ -146,7 +146,7 @@ CD 3D E3 CB  01  40 42 0F 00  01
 
 | Field             | Value | Encoded (hex) |
 | ----------------- | ----: | ------------- |
-| `number_of_items` |   `4` | `04`          |
+| `number_of_payloads` |   `4` | `04`          |
 
 So the container begins with:
 
@@ -154,9 +154,9 @@ So the container begins with:
 04
 ```
 
-### 2.4.3 Container items (4 items)
+### 2.4.3 Container payloads (4 payloads)
 
-Each item:
+Each payload:
 
 * `id` (uint32)
 * `payload_type` (uint8)
@@ -166,11 +166,11 @@ Each item:
 
 ---
 
-#### Item 1 — CAN 2.0 frame (`payload_type = 1  MESSAGE_CAN_2_0`)
+#### payload 1 — CAN 2.0 frame (`payload_type = 1  MESSAGE_CAN_2_0`)
 
 **Goal:** Transport exactly one CAN 2.0 frame.
 
-**Item header:**
+**payload header:**
 
 | Field                 | Value (human)         | Encoded (hex) |
 | --------------------- | --------------------- | ------------- |
@@ -195,7 +195,7 @@ So the **payload (16 bytes)** is:
 23 01 00 00  08 00 00 00  DE AD BE EF 01 02 03 04
 ```
 
-Full **Item 1 bytes**:
+Full **payload 1 bytes**:
 
 ```text
 11 00 00 00  01  01 10  23 01 00 00 08 00 00 00 DE AD BE EF 01 02 03 04
@@ -204,11 +204,11 @@ Full **Item 1 bytes**:
 
 ---
 
-#### Item 2 — CAN FD frame (`payload_type = 2  MESSAGE_CAN_FD`)
+#### payload 2 — CAN FD frame (`payload_type = 2  MESSAGE_CAN_FD`)
 
 **Goal:** Transport exactly one CAN FD frame (example uses 32 bytes of data).
 
-**Item header:**
+**payload header:**
 
 | Field                 | Value (human)        | Encoded (hex) |
 | --------------------- | -------------------- | ------------- |
@@ -237,7 +237,7 @@ FF DE BC 1A  0D 03 00 00  20 00 00 00 00 00 00 00
 10 11 12 13 14 15 16 17 18 19 1A 1B 1C 1D 1E 1F
 ```
 
-Full **Item 2 bytes**:
+Full **payload 2 bytes**:
 
 ```text
 12 00 00 00  02  01 28  <40 bytes payload shown above>
@@ -245,7 +245,7 @@ Full **Item 2 bytes**:
 
 ---
 
-#### Item 3 — TEXT (`payload_type = 64  TEXT_UTF8`)
+#### payload 3 — TEXT (`payload_type = 64  TEXT_UTF8`)
 
 **Goal:** Transport one UTF-8 string.
 
@@ -257,7 +257,7 @@ Example string:
 
 Length = 17 bytes.
 
-**Item header:**
+**payload header:**
 
 | Field                 | Value (human)    | Encoded (hex) |
 | --------------------- | ---------------- | ------------- |
@@ -273,7 +273,7 @@ Length = 17 bytes.
 R  i  d  e     m  o  d  e     =     S  P  O  R  T
 ```
 
-Full **Item 3 bytes**:
+Full **payload 3 bytes**:
 
 ```text
 20 00 00 00  40  11 01  52 69 64 65 20 6D 6F 64 65 20 3D 20 53 50 4F 52 54
@@ -281,7 +281,7 @@ Full **Item 3 bytes**:
 
 ---
 
-#### Item 4 — Metadata JSON (`payload_type = 94  JSON_UTF8`)
+#### payload 4 — Metadata JSON (`payload_type = 94  JSON_UTF8`)
 
 **Goal:** Attach metadata as JSON (UTF-8 bytes).
 
@@ -293,11 +293,11 @@ Example JSON (minified):
 
 Let `N = len(json_utf8_bytes)`.
 
-**Item header:**
+**payload header:**
 
 | Field                 | Value            | Notes               |
 | --------------------- | ---------------- | ------------------- |
-| `id`                  | `0x00000021`     | metadata item       |
+| `id`                  | `0x00000021`     | metadata payload       |
 | `payload_type`        | `94 (JSON_UTF8)` | JSON_UTF8           |
 | (`number_of_payload`) | `N`              | byte length of JSON |
 | (`size_of_payload`)   | `1`              | bytes               |
@@ -312,26 +312,26 @@ Let `N = len(json_utf8_bytes)`.
 [Header]
   id (4) + time_flag (1*) + timestamp (4) + container_type (1)
 [Container]
-  number_of_items (1)
-  Item 1 (CAN 2.0)
-  Item 2 (CAN FD)
-  Item 3 (TEXT)
-  Item 4 (JSON metadata)
+  number_of_payloads (1)
+  payload 1 (CAN 2.0)
+  payload 2 (CAN FD)
+  payload 3 (TEXT)
+  payload 4 (JSON metadata)
 [CRC32]
   crc32 (4)
 ```
 
 ### 2.4.5 Example hex dump (CRC omitted here)
 
-Below is a *partial* hex dump that includes Header, container header, and the complete Item 1 + Item 3.
-(Item 2 and Item 4 are shown above and can be appended directly.)
+Below is a *partial* hex dump that includes Header, container header, and the complete payload 1 + payload 3.
+(payload 2 and payload 4 are shown above and can be appended directly.)
 
 ```text
 CD 3D E3 CB 01 40 42 0F 00 01   04
 11 00 00 00 01 01 10 23 01 00 00 08 00 00 00 DE AD BE EF 01 02 03 04
 20 00 00 00 40 11 01 52 69 64 65 20 6D 6F 64 65 20 3D 20 53 50 4F 52 54
-... (Item 2 CAN FD bytes)
-... (Item 4 JSON bytes)
+... (payload 2 CAN FD bytes)
+... (payload 4 JSON bytes)
 <CRC32 4 bytes>
 ```
 
@@ -341,7 +341,7 @@ CD 3D E3 CB 01 40 42 0F 00 01   04
 
 ## 3. Payload Types List (legend)
 
-This legend is used by **`payload_type`** inside container items (Section 2.1.2).
+This legend is used by **`payload_type`** inside container payloads (Section 2.1.2).
 
 ### 3.1 Protocol / message payloads (1–50)
 
@@ -561,5 +561,5 @@ This legend is used by **`payload_type`** inside container items (Section 2.1.2)
 
 * First describe the **Message Header** (Header fields, Container Types, CRC).
 * Then document each `container_type` as its own subsection.
-* Per `container_type`: include the **extended header**, **container item layout**, and references to the **Payload Types List**.
+* Per `container_type`: include the **extended header**, **container payload layout**, and references to the **Payload Types List**.
 * Always mention CRC32 as a **required message footer**.
