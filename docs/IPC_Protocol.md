@@ -82,7 +82,7 @@ This container type can hold multiple **container items** inside one message.
 
 | Field             |  Size | Type  | Notes   |
 | ----------------- | ----: | ----- | ------- |
-| `number_of_items` | 8bit | uint8 | `0–255` |
+| `number_of_payloads` | 8bit | uint8 | `0–255` |
 
 #### 2.1.2 Container item definition (repeated `number_of_items` times)
 
