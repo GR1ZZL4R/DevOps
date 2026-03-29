@@ -1,6 +1,4 @@
-## The 1.0 Beta Version will be released in March 2026
-
-## The First 1.0 Alpha Versions are for Test-Users only. If you’d like to become a Test-User and get free access to all apps, please send me a request at [n.bloemen@grizzlar.de](mailto:n.bloemen@grizzlar.de)
+## The First 26R0 Beta Versions are for Test-Users only. If you’d like to become a Test-User and get free access to all apps, please send me a request at [n.bloemen@grizzlar.de](mailto:n.bloemen@grizzlar.de)
 
 # DevOps Lounge ✨🧭
 
@@ -71,7 +69,7 @@ Communication between apps flows through a central **DevOps Data Node** (logical
 * Everything lives in the **project folder**. Each app instance has its own **instance folder**.
 * IPC is a **bus**. Apps publish/subscribe via the **central Data Node**.
 * Messages are **frames**: local, fast, and **not persisted** by the IPC layer.
-* Versioning is controlled by `payload_type`. Currently only **`1`** is valid (DevOps 1.0 Alpha 1).
+* Versioning is controlled by `payload_type`. Currently only **`1`** is valid (DevOps 26R0 Beta).
 * **CRC32 is required**. Every message ends with CRC32 over the full frame.
 * Packages are **typed**. Data types come from the shared payload legend.
 
@@ -111,7 +109,7 @@ Communication between apps flows through a central **DevOps Data Node** (logical
 
 | Version         | Summary                |
 | --------------- | ---------------------- |
-| **1.0 Alpha 1** | Test-User Version only |
+| **26R0 Beta** | Test-User Version only |
 
 ---
 
@@ -131,8 +129,8 @@ Track changes to documentation, compatibility status, and roadmap entries.
 
 | Operating System  | Supported Version                |
 | ----------------- | -------------------------------- |
-| **Windows 10/11** | **1.0 Alpha 1**                  |
-| **Linux Ubuntu**  | **1.0 Alpha 1** (not tested yet) |
+| **Windows 10/11** | **26R0**                  |
+| **Linux Ubuntu**  | **26R0* (not tested yet) |
 
 ---
 
@@ -140,24 +138,23 @@ Track changes to documentation, compatibility status, and roadmap entries.
 
 **TBD** means the app version metadata has not been published a functional version yet but its in progress. 🔎
 
-> Column header uses a forced line break: **DevOps** (line 1) + **1.0 Alpha 1** (line 2).
 
-| App                  | DevOps_1.0_Alpha_1 | Notes                                                                                              |
+| App                  | DevOps_26R0 | Notes                                                                                              |
 | -------------------- | ------------------ | -------------------------------------------------------------------------------------------------- |
-| 🏬 App Store         | **1.0 TBD**        | Marketplace and app discovery                                                                      |
-| 📶 Bluetooth Monitor | **1.0 Release**    | Device discovery, telemetry readout, basic monitoring                                              |
-| 🎥 Cam Journal       | **1.0 Beta**       | Video-based sessions, logging, and analysis workflow entry point                                   |
-| ⌨️ Code Editor       | **1.0 Alpha**      | Code-based panels and IO-aware editing                                                             |
-| 📈 DataAnalyzer      | **1.0 Beta**       | Plots, filters, and analysis building blocks                                                       |
-| 🧪 DataLab           | **1.0 Alpha**      | Panel-based workspace (tables, editors, analyzers)                                                 |
-| 🌐 ETH TERMINAL      | **1.0 TBD**        | Ethernet/network tools (planned)                                                                   |
-| 🚌 CAN TERMINAL      | **1.0 Alpha**      | CAN 2.0 & CAN-FD source code is based on [SavvyCAN](https://github.com/collin80/SavvyCAN), with custom modifications and additions developed by us. |
-| 📡 LoCo-Unit         | **1.0 TBD**        | LoCo-Unit device integration (planned)                                                             |
-| 🔤 OCR Video         | **1.0 Alpha**      | OCR extraction from video overlays to CSV                                                          |
-| 🧩 pyhbox Interface  | **1.0 Release**    | Sensor app integration and live data bridging (planned)                                            |
-| 🔌 SERIAL TERMINAL   | **1.0 Release**    | Serial communication, logging, quick debugging                                                     |
-| 📋 Table             | **1.0 Alpha**      | CSV/table panels and basic data inspection                                                         |
-| 📶 WiFi Monitor      | **1.0 TBD**        | WiFi device monitoring (planned)                                                                   |
+| 🏬 App Store         | **26R0**        | Marketplace and app discovery                                                                      |
+| 📶 Bluetooth Monitor | **26R0**    | Device discovery, telemetry readout, basic monitoring                                              |
+| 🎥 Cam Journal       | **26R0**       | Video-based sessions, logging, and analysis workflow entry point                                   |
+| ⌨️ Code Editor       | **26R0**      | Code-based panels and IO-aware editing                                                             |
+| 📈 DataAnalyzer      | **26R0 Beta**       | Plots, filters, and analysis building blocks                                                       |
+| 🧪 DataLab           | **26R0 Beta**      | Panel-based workspace (tables, editors, analyzers)                                                 |
+| 🌐 ETH TERMINAL      | **TBD**        | Ethernet/network tools (planned)                                                                   |
+| 🚌 CAN TERMINAL      | **TBD**      | CAN 2.0 & CAN-FD source code is based on [SavvyCAN](https://github.com/collin80/SavvyCAN), with custom modifications and additions developed by us. |
+| 📡 LoCo-Unit         | **TBD**        | LoCo-Unit device integration (planned)                                                             |
+| 🔤 OCR Video         | **TBD**      | OCR extraction from video overlays to CSV                                                          |
+| 🧩 pyhbox Interface  | **26R0**    | Sensor app integration and live data bridging (planned)                                            |
+| 🔌 SERIAL TERMINAL   | **26R0**    | Serial communication, logging, quick debugging                                                     |
+| 📋 Table             | **26R0**      | CSV/table panels and basic data inspection                                                         |
+| 📶 WiFi Monitor      | **TBD**        | WiFi device monitoring (planned)                                                                   |
 
 ---
 
@@ -181,11 +178,11 @@ Track changes to documentation, compatibility status, and roadmap entries.
 | ✅      | DevOps App Store.                                                        |
 | ✅      | Prototype Testing.                                                       |
 | ✅      | Concept Freeze for Secrurity.                                            |
-| 🧷     | Testing Alpha Version.                                                   |
-| 🧷     | - Lizenz Secrurity.                                                      |
+| ✅     | Testing Alpha Version.                                                   |
+| ✅     | - Lizenz Secrurity.                                                      |
 | ✅     | - Creation of a compiler pipeline for deliverable software in C and C++. |
-| 🧷     | - Smoke-Tests for internal App Communications (>100 Mbit).               |
-| 🧷     | - Ramp up Git-based actions automated DevOps software testing.           |
+| ✅     | - Smoke-Tests for internal App Communications (>100 Mbit).               |
+| ✅     | - Ramp up Git-based actions automated DevOps software testing.           |
 | 🤝     | Prelauch Alpha Version to Test Users.                                    |
 | 🤝     | Collect feedback and take it into account for the Betea version.         |
 | 🤝     | Launch Beta Version at March.                                            |
