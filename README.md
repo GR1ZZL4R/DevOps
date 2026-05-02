@@ -129,8 +129,8 @@ Track changes to documentation, compatibility status, and roadmap entries.
 
 | Operating System  | Supported Version                |
 | ----------------- | -------------------------------- |
-| **Windows 10/11** | **26R0**                  |
-| **Linux Ubuntu**  | **26R0* (not tested yet) |
+| **Windows 10/11** | **26R0 Beta 1**                  |
+| **Linux Ubuntu**  | **26R0 Beta 1**                  |
 
 ---
 
@@ -142,17 +142,17 @@ Track changes to documentation, compatibility status, and roadmap entries.
 | App                  | DevOps_26R0 | Notes                                                                                              |
 | -------------------- | ------------------ | -------------------------------------------------------------------------------------------------- |
 | 🏬 App Store         | **26R0**        | Marketplace and app discovery                                                                      |
-| 📶 Bluetooth Monitor | **26R0**    | Device discovery, telemetry readout, basic monitoring                                              |
+| 📶 Bluetooth Monitor | **26R0 Beta**    | Device discovery, telemetry readout, basic monitoring                                              |
 | 🎥 Cam Journal       | **26R0**       | Video-based sessions, logging, and analysis workflow entry point                                   |
 | ⌨️ Code Editor       | **26R0**      | Code-based panels and IO-aware editing                                                             |
 | 📈 DataAnalyzer      | **26R0 Beta**       | Plots, filters, and analysis building blocks                                                       |
-| 🧪 DataLab           | **26R0 Beta**      | Panel-based workspace (tables, editors, analyzers)                                                 |
+| 🧪 DataLab           | **26R0**      | Panel-based workspace (tables, editors, analyzers)                                                 |
 | 🌐 ETH TERMINAL      | **TBD**        | Ethernet/network tools (planned)                                                                   |
 | 🚌 CAN TERMINAL      | **TBD**      | CAN 2.0 & CAN-FD source code is based on [SavvyCAN](https://github.com/collin80/SavvyCAN), with custom modifications and additions developed by us. |
 | 📡 LoCo-Unit         | **TBD**        | LoCo-Unit device integration (planned)                                                             |
 | 🔤 OCR Video         | **TBD**      | OCR extraction from video overlays to CSV                                                          |
 | 🧩 pyhbox Interface  | **26R0**    | Sensor app integration and live data bridging (planned)                                            |
-| 🔌 SERIAL TERMINAL   | **26R0**    | Serial communication, logging, quick debugging                                                     |
+| 🔌 SERIAL TERMINAL   | **26R0 Beta**    | Serial communication, logging, quick debugging                                                     |
 | 📋 Table             | **26R0**      | CSV/table panels and basic data inspection                                                         |
 | 📶 WiFi Monitor      | **TBD**        | WiFi device monitoring (planned)                                                                   |
 
@@ -183,9 +183,9 @@ Track changes to documentation, compatibility status, and roadmap entries.
 | ✅     | - Creation of a compiler pipeline for deliverable software in C and C++. |
 | ✅     | - Smoke-Tests for internal App Communications (>100 Mbit).               |
 | ✅     | - Ramp up Git-based actions automated DevOps software testing.           |
-| 🤝     | Prelauch Alpha Version to Test Users.                                    |
-| 🤝     | Collect feedback and take it into account for the Betea version.         |
-| 🤝     | Launch Beta Version at March.                                            |
+| ✅     | Prelauch Alpha Version to Test Users.                                    |
+| ✅     | Collect feedback and take it into account for the Betea version.         |
+| ✅     | Launch Beta Version at March.                                            |
 
 ---
 
