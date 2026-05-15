@@ -153,11 +153,8 @@ Track changes to documentation, compatibility status, and roadmap entries.
 | 📋 Table             |          |          | CSV/table panels and basic data inspection                                                         |
 | 📶 WiFi Monitor      |          |          | WiFi device monitoring (planned)                                                                   |
 
----
 
-## Nice that you’re interested! Here’s a sneak peek :
 
-## Preview @ [www.grizzlar.de/devops](http://www.grizzlar.de/devops)  Password: Preview1234
 
 ---
 
