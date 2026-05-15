@@ -1,5 +1,3 @@
-## The First 26R0 Beta Versions are for Test-Users only. If you’d like to become a Test-User and get free access to all apps, please send me a request at [n.bloemen@grizzlar.de](mailto:n.bloemen@grizzlar.de)
-
 # DevOps Lounge ✨🧭
 
 **DevOps Lounge** is the public hub for the DevOps ecosystem: release notes, changelogs, supported versions, app compatibility, and roadmap highlights.
@@ -139,22 +137,21 @@ Track changes to documentation, compatibility status, and roadmap entries.
 **TBD** means the app version metadata has not been published a functional version yet but its in progress. 🔎
 
 
-| App                  | DevOps_26R0 | Notes                                                                                              |
-| -------------------- | ------------------ | -------------------------------------------------------------------------------------------------- |
-| 🏬 App Store         | **26R0**        | Marketplace and app discovery                                                                      |
-| 📶 Bluetooth Monitor | **26R0 Beta**    | Device discovery, telemetry readout, basic monitoring                                              |
-| 🎥 Cam Journal       | **26R0**       | Video-based sessions, logging, and analysis workflow entry point                                   |
-| ⌨️ Code Editor       | **26R0**      | Code-based panels and IO-aware editing                                                             |
-| 📈 DataAnalyzer      | **26R0 Beta**       | Plots, filters, and analysis building blocks                                                       |
-| 🧪 DataLab           | **26R0**      | Panel-based workspace (tables, editors, analyzers)                                                 |
-| 🌐 ETH TERMINAL      | **TBD**        | Ethernet/network tools (planned)                                                                   |
-| 🚌 CAN TERMINAL      | **TBD**      | CAN 2.0 & CAN-FD source code is based on [SavvyCAN](https://github.com/collin80/SavvyCAN), with custom modifications and additions developed by us. |
-| 📡 LoCo-Unit         | **TBD**        | LoCo-Unit device integration (planned)                                                             |
-| 🔤 OCR Video         | **TBD**      | OCR extraction from video overlays to CSV                                                          |
-| 🧩 pyhbox Interface  | **26R0**    | Sensor app integration and live data bridging (planned)                                            |
-| 🔌 SERIAL TERMINAL   | **26R0 Beta**    | Serial communication, logging, quick debugging                                                     |
-| 📋 Table             | **26R0**      | CSV/table panels and basic data inspection                                                         |
-| 📶 WiFi Monitor      | **TBD**        | WiFi device monitoring (planned)                                                                   |
+| App                  | DevOps_26R0 | DevOps_26R1 |  Notes                                                                                              |
+| -------------------- | --------------------| ---- |---------------------------------------------------------------------------------------------- |
+| 📶 Bluetooth Monitor | **26R0** | **26R1** |   Device discovery, telemetry readout, basic monitoring                                              |
+| 🎥 Cam Journal       |          | **26R0** | Video-based sessions, logging, and analysis workflow entry point                                   |
+| ⌨️ Code Editor       |          |          | Code-based panels and IO-aware editing                                                             |
+| 📈 DataAnalyzer      |          | **26R0** |Plots, filters, and analysis building blocks                                                       |
+| 🧪 DataLab           |          |          |Panel-based workspace (tables, editors, analyzers)                                                 |
+| 🌐 ETH TERMINAL      |          |          | Ethernet/network tools (planned)                                                                   |
+| 🚌 CAN TERMINAL      |          |          | CAN 2.0 & CAN-FD source code is based on [SavvyCAN](https://github.com/collin80/SavvyCAN), with custom modifications and additions developed by us. |
+| 📡 LoCo-Unit         |          |          | LoCo-Unit device integration (planned)                                                             |
+| 🔤 OCR Video         |          |          | OCR extraction from video overlays to CSV                                                          |
+| 🧩 pyhbox Interface  |          |          | Sensor app integration and live data bridging (planned)                                            |
+| 🔌 SERIAL TERMINAL   | **26R0** | **26R1** | Serial communication, logging, quick debugging                                                     |
+| 📋 Table             |          |          | CSV/table panels and basic data inspection                                                         |
+| 📶 WiFi Monitor      |          |          | WiFi device monitoring (planned)                                                                   |
 
 ---
 
